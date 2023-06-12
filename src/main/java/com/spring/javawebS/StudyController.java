@@ -54,7 +54,7 @@ public class StudyController {
 		String decPwd = "";
 
 		encPwd = ARIAUtil.ariaEncrypt(pwd);
-		decPwd = ARIAUtil.ariaDecrypt(decPwd);
+		decPwd = ARIAUtil.ariaDecrypt(encPwd);
 		
 		pwd = "원본 비밀번호 : " + pwd + " / 암호화된 비밀번호 : " + encPwd + " / 복호화된 비밀번호 : " + decPwd;
 		return pwd;
